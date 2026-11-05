@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бекбол — Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="site">
+
+    <header class="header">
+        <a class="logo" href="#home">Бекбол<span>.</span></a>
+
+        <button class="menu-button" id="menuButton" aria-label="Открыть меню">☰</button>
+
+        <nav class="nav" id="navigation">
+            <a href="#home">Главная</a>
+            <a href="#about">Обо мне</a>
+            <a href="#work">Работы</a>
+            <a href="#skills">Навыки</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+         <div class="social-links">
+                <a href="https://www.instagram.com/" target="_blank"
+                   rel="noopener noreferrer" aria-label="Instagram">Ig</a>
+
+        <button class="theme-button" id="themeButton" aria-label="Сменить тему">☾</button>
+         </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow">Привет, меня зовут Бекбол,</p>
+                <h1>Веб-<br>дизайнер</h1>
+                <p class="hero-subtitle">и фронтенд-разработчик.</p>
+                <a class="button" href="#about">Обо мне ↗</a>
+            </div>
+
+           <div class="portrait-wrap">
+                <div class="portrait">
+                    <img src="bekbol.jpg" alt="Бекбол">
+                </div>
+                <span class="decoration plus">＋</span>
+                <span class="decoration slash">／／／／</span>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <h2 class="section-title">Oбо мне.</h2>
+            <p class="intro-text">
+                Меня зовут Бекбол, мне 16 лет, я учусь и интересуюсь современными технологиями, веб-разработкой и дизайном.
+                Мне нравится создавать красивые и удобные сайты, экспериментировать с цветами и изучать программирование.
+                Сейчас я нахожусь в начале своего пути. Я развиваю навыки веб-дизайна и разработки.
+                Каждый новый проект помогает мне получать опыт, узнавать что-то новое и становиться лучше.
+            </p>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <span class="dot"></span>
+                <h3>2024 — 2025</h3>
+                <p>Изучал основы Python, создавал учебные проекты.</p>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="dot"></span>
+                    <h3>2025 — 2026</h3>
+                    <p>Освоил Figma и начал создавать макеты сайтов и графические работы,<br>Также изучал Python.</p>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="dot"></span>
+                    <h3>2026 — настоящее время</h3>
+                    <p>Изучаю HTML, CSS, Java и JavaScript, создаю учебные проекты.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="work">
+            <h2 class="section-title">Мои проекты.</h2>
+            <p class="section-description">Мои учебные задания и практика во время изучения программирования.
+                Это не коммерческие заказы, а первые шаги в разработке.</p>
+
+            <div class="filter-buttons">
+                <button class="filter-button active" data-filter="all">Все</button>
+                <button class="filter-button" data-filter="web">Веб-сайты</button>
+                <button class="filter-button" data-filter="code">Программирование</button>
+            </div>
+
+            <div class="work-grid">
+
+                <article class="work-card" data-category="web">
+                    <button class="project-image"
+                            data-title="Моё портфолио"
+                            data-description="Личный сайт, который я создаю для изучения HTML, CSS и JavaScript. В нём есть разделы обо мне, навыках, учебных работах и контактах.">
+                        <img src="portfolio.jpeg" alt="Моё портфолио">
+
+
+                    </button>
+                    <p class="project-date">Личный учебный проект</p>
+                    <h3>Моё портфолио</h3>
+                    <p class="project-description">
+                        Создание личного сайта с помощью HTML, CSS и JavaScript.
+                    </p>
+                </article>
+
+                <article class="work-card" data-category="web">
+                    <button class="project-image"
+                            data-title="Первая веб-страница"
+                            data-description="Учебная практика по созданию простой веб-страницы. Изучение заголовков, текста, изображений, ссылок и оформления с помощью CSS.">
+                        <img src="webpage.jpeg" alt="Первая веб-страница">
+                    </button>
+                    <p class="project-date">Практика HTML и CSS</p>
+                    <h3>Первая веб-страница</h3>
+                    <p class="project-description">
+                        Основы HTML, оформление текста и изображений.
+                    </p>
+                </article>
+
+                <article class="work-card" data-category="code">
+                    <button class="project-image"
+                            data-title="Практика Python"
+                            data-description="Учебные упражнения на Python: простые вычисления, переменные, условия, циклы и небольшие программы для закрепления материала.">
+                        <img src="python.jpeg" alt="Практика Python">
+
+                    </button>
+                    <p class="project-date">Учебные упражнения</p>
+                    <h3>Практика Python</h3>
+                    <p class="project-description">
+                        Простые программы, переменные и условия.
+                    </p>
+                </article>
+
+                <article class="work-card" data-category="code">
+                    <button class="project-image"
+                            data-title="Практика JavaScript"
+                            data-description="Изучение основ JavaScript: обработка нажатий на кнопки, работа с элементами страницы, переключение темы и проверка формы.">
+                        <img
+                            src="javascript.jpeg" alt="Практика JavaScript">
+                           
+                    </button>
+                    <p class="project-date">Практика JavaScript</p>
+                    <h3>Интерактивные элементы</h3>
+                    <p class="project-description">
+                        Кнопки, меню и простые функции на JavaScript.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <h2 class="section-title">Навыки.</h2>
+            <p class="section-description">Инструменты и направления, которые я изучаю.</p>
+
+            <div class="skills-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Figma</span>
+                <span>Веб-дизайн</span>
+                <span>Графический дизайн</span>
+                <span>Java</span>
+                <span>Python</span>
+                <span>Bash</span>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2 class="section-title">Контакты.</h2>
+
+            <div class="contact-layout">
+                <img class="contact-image"
+                     src="contact.jpeg" alt="Контакты">
+
+                <div class="contact-content">
+                    <p>Есть идея или проект? Буду рад обсудить сотрудничество.</p>
+                    <a class="email-link" href="mailto:toktobekovbekbol9@gmail.com">Написать мне↗</a>
+
+                    <form id="contactForm" novalidate>
+                        <label for="name">Ваше имя</label>
+                        <input id="name" name="name" type="text" required>
+
+                        <label for="email">Электронная почта</label>
+                        <input id="email" name="email" type="email" required>
+
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <p id="formMessage" class="form-message" aria-live="polite"></p>
+                        <button class="button" type="submit">Проверить форму ↗</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="logo" href="#home">Бекбол<span>.</span></a>
+        <p>© 2026 Бекбол — Портфолио дизайнера</p>
+        <a href="#home">Наверх ↑</a>
+    </footer>
+</div>
+
+<dialog class="modal" id="projectModal">
+    <button class="modal-close" id="modalClose" aria-label="Закрыть">×</button>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+</dialog>
+</body>
+</html>
